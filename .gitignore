@@ -4,3 +4,5 @@ _backup_multi_page_site/
 Thumbs.db
 node_modules/
 *.log
+.vercel
+.env*
