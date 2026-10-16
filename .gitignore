@@ -1,0 +1,6 @@
+.gstack/
+_backup_multi_page_site/
+.DS_Store
+Thumbs.db
+node_modules/
+*.log

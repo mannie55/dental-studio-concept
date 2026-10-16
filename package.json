@@ -1,0 +1,9 @@
+{
+  "name": "dental-studio-concept",
+  "version": "1.0.0",
+  "description": "Boutique aesthetic dental landing page concept for client presentations and outreach.",
+  "scripts": {
+    "start": "npx serve . -p 8000",
+    "serve": "python3 -m http.server 8000"
+  }
+}
