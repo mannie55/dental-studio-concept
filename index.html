@@ -249,25 +249,52 @@
     pointer-events: none !important;
   }
 
-  /* Mobile Hero Layout: eliminate text collision, overflow, and sticky header overlap */
+  /* Mobile Hero Layout: transparent nav, balanced trust signal & breathable h1/button */
   @media (max-width: 809.98px) {
     .framer-xz9jp0-container,
-    .framer-D0wf4.framer-v-r06qjf .framer-1mwbh4g {
-      background-color: rgba(14, 30, 34, 0.94) !important;
-      backdrop-filter: blur(16px) !important;
-      -webkit-backdrop-filter: blur(16px) !important;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+    .framer-D0wf4,
+    .framer-D0wf4 .framer-1mwbh4g,
+    .framer-D0wf4.framer-v-r06qjf .framer-1mwbh4g,
+    .framer-D0wf4.framer-v-1h6p4p6 .framer-1mwbh4g,
+    .framer-D0wf4.framer-v-x80m4i .framer-1mwbh4g,
+    .framer-D0wf4.framer-v-ardl71 .framer-1mwbh4g {
+      background-color: transparent !important;
+      background: transparent !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+      border-bottom: none !important;
+      box-shadow: none !important;
     }
     
     .framer-KXZB9 .framer-1jm03qa {
-      padding: 74px 16px 18px !important;
+      padding: 68px 16px 18px !important;
       min-height: auto !important;
       height: auto !important;
     }
     
+    /* Spacer between Trust and Main: hidden so Trust sits right above H1 */
+    .framer-KXZB9 .framer-1ddjgf9 {
+      display: none !important;
+      height: 0 !important;
+      min-height: 0 !important;
+      flex: 0 0 auto !important;
+    }
+    
+    /* Trust signal: natural top clearance and positioned close to H1 */
+    .framer-KXZB9 .framer-14wroo4 {
+      margin-top: 14px !important;
+      margin-bottom: 8px !important;
+      flex: 0 0 auto !important;
+    }
+    
+    /* Main headline section: moved upward with clean breathing space */
     .framer-KXZB9 .framer-3n13rt {
-      padding: 12px 0 14px !important;
-      gap: 12px !important;
+      padding: 0 0 16px !important;
+      gap: 16px !important;
+    }
+    
+    .framer-KXZB9 .framer-hw7oio {
+      margin-bottom: 4px !important;
     }
     
     .framer-KXZB9 .framer-1aah96d h1,
@@ -283,17 +310,19 @@
       height: auto !important;
     }
     
+    /* Aside containing description and button: generous breathing room */
     .framer-KXZB9 .framer-1musdod {
-      gap: 12px !important;
+      gap: 16px !important;
     }
     .framer-KXZB9 .framer-xq9tx7 p {
       font-size: 13px !important;
-      line-height: 1.42em !important;
+      line-height: 1.45em !important;
       color: rgba(255, 255, 255, 0.88) !important;
     }
     
     .framer-KXZB9 .framer-ilya1c {
       gap: 8px !important;
+      margin-top: 4px !important;
     }
     
     .vanguard-credentials-mockup {
